@@ -1,0 +1,32 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.5.0)
+    build-essential (1.2.0)
+    chef_gem (0.1.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-rvm.git
+  ref: master
+  sha: 3d1c3dda01d5dee02a99d53783f2f11d5a0f195d
+  specs:
+    rvm (0.9.3)
+      chef_gem (>= 0.0.0)
+
+PATH
+  remote: vendor/cookbooks/localization
+  specs:
+    localization (0.1.0)
+
+PATH
+  remote: vendor/cookbooks/trema
+  specs:
+    trema (0.1.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  build-essential (>= 0)
+  localization (>= 0)
+  rvm (>= 0)
+  trema (>= 0)
+
